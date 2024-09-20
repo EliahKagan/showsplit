@@ -12,11 +12,13 @@ operating system, which this can be used to check and experiment with.
 
 For example, on Windows, `env::split_paths` recognizes quoting with literal `"`
 characters that remove the special meaning from `;`, which is otherwise the
-separator. (Such values of the `PATH` environment variable work as intended in
-some but not all context in Windows itself, and that `std::env::split_paths`
-and `std::process::Command` support them does not mean one should use this
-feature. But exploring it is nonetheless one of the motivating uses of this
-little utility.)
+separator.
+
+(Such values of the `PATH` environment variable work as intended in some but
+not all contexts in Windows itself, and that `std::env::split_paths` and
+`std::process::Command` support them does not mean one should use this feature.
+But exploring it is nonetheless one of the motivating uses of this little
+utility.)
 
 ## Usage
 
